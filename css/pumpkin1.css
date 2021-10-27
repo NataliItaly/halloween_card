@@ -1,0 +1,47 @@
+.pumpkin-img-wrapper1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #07060a;
+  position: absolute;
+  top: 332px;
+  left: 52px;
+  transform: rotate(-29deg);
+}
+
+.pumpkin-img1 {
+  width: 100%;
+  height: auto;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pumpkin-img-wrapper1::before,
+.pumpkin-img-wrapper1::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #000 40%, #d7a65d 41%);
+  top: 28px;
+  animation: eye1 1.5s ease-in-out infinite;
+}
+
+.pumpkin-img-wrapper1::before {
+  left: 13px;
+}
+
+.pumpkin-img-wrapper1::after {
+  right: 16px;
+}
+
+@keyframes eye1 {
+  90% {
+    transform: none;
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}

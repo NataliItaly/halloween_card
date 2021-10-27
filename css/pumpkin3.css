@@ -1,0 +1,47 @@
+.pumpkin-img-wrapper3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #07060a;
+  position: absolute;
+  top: 353px;
+  left: 123px;
+  transform: rotate(10deg);
+}
+
+.pumpkin-img3 {
+  width: 100%;
+  height: auto;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pumpkin-img-wrapper3::before,
+.pumpkin-img-wrapper3::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #000 40%, #d7a65d 41%);
+  top: 14px;
+  animation: eye3 2s ease-in-out infinite;
+}
+
+.pumpkin-img-wrapper3::before {
+  left: 10px;
+}
+
+.pumpkin-img-wrapper3::after {
+  right: 10px;
+}
+
+@keyframes eye3 {
+  90% {
+    transform: none;
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}

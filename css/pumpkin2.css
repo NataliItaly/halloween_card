@@ -1,0 +1,47 @@
+.pumpkin-img-wrapper2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #07060a;
+  position: absolute;
+  top: 339px;
+  right: 46px;
+  transform: rotate(58deg);
+}
+
+.pumpkin-img2 {
+  width: 100%;
+  height: auto;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pumpkin-img-wrapper2::before,
+.pumpkin-img-wrapper2::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #000 40%, #d7a65d 41%);
+  top: 28px;
+  animation: eye2 1.8s ease-in-out infinite;
+}
+
+.pumpkin-img-wrapper2::before {
+  left: 13px;
+}
+
+.pumpkin-img-wrapper2::after {
+  right: 16px;
+}
+
+@keyframes eye2 {
+  90% {
+    transform: none;
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}

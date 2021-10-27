@@ -1,0 +1,39 @@
+.pumpkin-eye1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  left: 111px;
+  top: 292px;
+  position: absolute;
+  transform: rotate(16deg);
+}
+
+.pumpkin-eye1::before,
+.pumpkin-eye1::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #1e1c1c 40%, orange 41%);
+  top: 16px;
+  animation: pumpkin-eye1 2.2s ease-in-out infinite;
+}
+
+.pumpkin-eye1::before {
+  left: 8px;
+}
+
+.pumpkin-eye1::after {
+  right: 8px;
+}
+
+@keyframes pumpkin-eye1 {
+  90% {
+    transform: none;
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}
